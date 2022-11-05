@@ -1,4 +1,7 @@
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef SWITCHES_H
 #define SWITCHES_H
 
@@ -67,3 +70,5 @@ private:
 };
 
 #endif // SWITCHES_H
+
+#endif // defined(BASTL_FEATURE_ALL)

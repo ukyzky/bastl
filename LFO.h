@@ -5,6 +5,9 @@
  *      Author: user
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef LFO_H_
 #define LFO_H_
 
@@ -51,3 +54,5 @@ protected:
 
 
 #endif /* LFO_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

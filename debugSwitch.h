@@ -5,6 +5,9 @@
  *      Author: user
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef DEBUGSWITCH_H_
 #define DEBUGSWITCH_H_
 
@@ -22,3 +25,5 @@
 
 
 #endif /* DEBUGSWITCH_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

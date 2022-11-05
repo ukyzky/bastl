@@ -5,6 +5,9 @@
  *      Author: bastl
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef BITARRAYOPERATIONS_H_
 #define BITARRAYOPERATIONS_H_
 
@@ -22,3 +25,5 @@ bool getBit(unsigned char bitArray, unsigned char bitIndex);
 //}
 
 #endif /* BITARRAYOPERATIONS_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

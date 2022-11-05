@@ -5,6 +5,9 @@
  *      Author: user
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef EEPROMOBJECT_H_
 #define EEPROMOBJECT_H_
 
@@ -165,3 +168,5 @@ baseType EEPROMObject<baseType>::load() {
 
 
 #endif /* EEPROMOBJECT_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

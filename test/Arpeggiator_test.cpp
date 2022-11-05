@@ -5,6 +5,9 @@
  *      Author: Martin Baar
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "../Arpeggiator.h"
 #include <stdio.h>
 #include <string>
@@ -381,3 +384,4 @@ int main( int argc, const char* argv[] ) {
 	return testResult ? 0 : 1;
 }
 
+#endif // defined(BASTL_FEATURE_ALL)

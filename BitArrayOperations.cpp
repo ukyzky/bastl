@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "BitArrayOperations.h"
 
 void setBit(unsigned int & bitArray, unsigned char bitIndex, bool value) {
@@ -19,3 +22,5 @@ void setBit(unsigned char & bitArray, unsigned char bitIndex, bool value) {
 bool getBit(unsigned char bitArray, unsigned char bitIndex) {
 		return (bitArray & (1 << bitIndex)) != 0;
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

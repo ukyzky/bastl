@@ -5,6 +5,9 @@
  *      Author: user
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef MAPPING_H_
 #define MAPPING_H_
 
@@ -119,3 +122,5 @@ inline int16_t mapLinearRuntimePreciseU8S16(uint8_t input, int16_t start, int16_
 
 
 #endif /* MAPPING_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef SEQUENCEMESSAGE_H
 #define SEQUENCEMESSAGE_H
 
@@ -21,3 +24,5 @@ inline void Step::setMuted(bool mute) {
 }
 
 #endif // SEQUENCEMESSAGE_H
+
+#endif // defined(BASTL_FEATURE_ALL)

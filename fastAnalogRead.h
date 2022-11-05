@@ -5,6 +5,9 @@
  *      Author: user
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL) || defined(BASTL_FEATURE_LITTLENERD)
+
 #ifndef FASTANALOGREAD_H_
 #define FASTANALOGREAD_H_
 
@@ -47,3 +50,5 @@ uint16_t getConversionResult() {
 }
 
 #endif /* FASTANALOGREAD_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL) || defined(BASTL_FEATURE_LITTLENERD)

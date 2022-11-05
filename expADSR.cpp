@@ -16,6 +16,9 @@
 //  You may modify and use this source code to create binary code for your own purposes, free or commercial.
 //
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "expADSR.h"
 #include <math.h>
 
@@ -77,3 +80,5 @@ void ADSR::setTargetRatioDR(float targetRatio) {
     decayBase = (sustainLevel - targetRatioDR) * (1.0 - decayCoef);
     releaseBase = -targetRatioDR * (1.0 - releaseCoef);
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

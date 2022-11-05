@@ -1,4 +1,9 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef SEQUENCEDATATYPEENUM_H
 #define SEQUENCEDATATYPEENUM_H
 
 #endif // SEQUENCEDATATYPEENUM_H
+
+#endif // defined(BASTL_FEATURE_ALL)

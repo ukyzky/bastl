@@ -5,6 +5,9 @@
  *      Author: bastl
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "SimplifiedTapper.h"
 //#include <stdlib.h>
 
@@ -69,3 +72,5 @@ void SimplifiedTapper::tap(unsigned int tapTime)
         }
     }
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

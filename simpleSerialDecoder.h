@@ -5,6 +5,9 @@
  *      Author: dasvaclav
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef SIMPLESERIALDECODER_H_
 #define SIMPLESERIALDECODER_H_
 
@@ -80,3 +83,5 @@ class simpleSerialDecoder {
 
 
 #endif /* SIMPLESERIALDECODER_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

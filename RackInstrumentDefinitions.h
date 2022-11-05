@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef INSTRUMENTDEFINITIONS_H
 #define INSTRUMENTDEFINITIONS_H
 
@@ -19,3 +22,5 @@
 #define ALL_INSTRUMENTS_IN_BYTES 3
 
 #endif // INSTRUMENTDEFINITIONS_H
+
+#endif // defined(BASTL_FEATURE_ALL)

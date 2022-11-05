@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef MIDIMESSAGE_H
 #define MIDIMESSAGE_H
 
@@ -64,3 +67,5 @@ inline void MIDICommand::setChannel(const unsigned char & channel)
 }
 
 #endif // MIDIMESSAGE_H
+
+#endif // defined(BASTL_FEATURE_ALL)

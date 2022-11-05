@@ -5,6 +5,9 @@
  *      Author: Martin Baar
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "ArduinoMIDICommandProcessor.h"
 
 ArduinoMIDICommandProcessor::ArduinoMIDICommandProcessor(void (*sendNoteOnCallback)(unsigned char note,
@@ -30,3 +33,4 @@ void ArduinoMIDICommandProcessor::SendCommand(MIDICommand & command) {
 
 }
 
+#endif // defined(BASTL_FEATURE_ALL)

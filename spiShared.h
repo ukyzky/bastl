@@ -5,6 +5,9 @@
  *      Author: user
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef SPISHARED_H_
 #define SPISHARED_H_
 
@@ -34,3 +37,5 @@ static inline __attribute__((always_inline)) byte  spiWrite(byte data) {
 
 
 #endif /* SPISHARED_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

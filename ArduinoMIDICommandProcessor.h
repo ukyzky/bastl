@@ -5,6 +5,9 @@
  *      Author: Martin Baar
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "IMIDICommandProcessor.h"
 
 #ifndef ARDUINOMIDICOMMANDPROCESSOR_H_
@@ -25,3 +28,5 @@ private:
 };
 
 #endif /* ARDUINOMIDICOMMANDPROCESSOR_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

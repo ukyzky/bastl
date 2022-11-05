@@ -5,6 +5,9 @@
  *      Author: bastl
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "BPMConverter.h"
 
 uint16_t BPMConverter::bpmToTimeUnits(uint16_t bpm, uint16_t timeUnitsPerSecond, uint16_t sourceLeftOvers, uint16_t & leftOvers) {
@@ -19,3 +22,5 @@ uint16_t BPMConverter::bpmToTimeUnits(uint16_t bpm, uint16_t timeUnitsPerSecond,
 uint16_t BPMConverter::timeUnitsToBPM(uint16_t timeUnitsPerBeat, uint16_t timeUnitsPerSecond) {
 	return (timeUnitsPerSecond * 60) / timeUnitsPerBeat / 16;
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

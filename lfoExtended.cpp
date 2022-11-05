@@ -5,6 +5,9 @@
  *      Author: user
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "lfoExtended.h"
 #include "random.h"
 
@@ -193,5 +196,4 @@ uint8_t lfoExtended::getValue() {
 	return currentOutput;
 }
 
-
-
+#endif // defined(BASTL_FEATURE_ALL)

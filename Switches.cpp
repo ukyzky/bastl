@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "Switches.h"
 #include "BitArrayOperations.h"
 
@@ -70,3 +73,5 @@ void Switches::setStatus(unsigned char buttonIndex, bool value)
     		LEDsAndButtonsHWWrapper::setLED(buttonIndexes_[buttonIndex], value ? ILEDHW::ON : ILEDHW::OFF);
     }
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

@@ -5,6 +5,9 @@
  *      Author: martin
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef IBUTTONHW_H_
 #define IBUTTONHW_H_
 
@@ -21,3 +24,5 @@ public:
 };
 
 #endif /* IBUTTONHW_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

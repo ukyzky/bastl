@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef DRUMSTEP_H
 #define DRUMSTEP_H
 
@@ -38,3 +41,5 @@ inline void DrumStep::setSubStep(unsigned char index,  DrumVelocityType type) {
 }
 
 #endif // DRUMSTEP_H
+
+#endif // defined(BASTL_FEATURE_ALL)

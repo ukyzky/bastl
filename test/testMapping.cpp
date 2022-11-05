@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include <stdio.h>
 #include <inttypes.h>
 
@@ -29,3 +32,5 @@ for (uint16_t index=0; index<256; index++) {
 
 
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

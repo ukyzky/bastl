@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef LEDRADIOBUTTONS_H
 #define LEDRADIOBUTTONS_H
 
@@ -14,3 +17,5 @@ public:
 };
 
 #endif // LEDRADIOBUTTONS_H
+
+#endif // defined(BASTL_FEATURE_ALL)

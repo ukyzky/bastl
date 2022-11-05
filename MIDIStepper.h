@@ -5,6 +5,9 @@
  *      Author: Martin Baar
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef MIDISTEPPER_H_
 #define MIDISTEPPER_H_
 
@@ -29,3 +32,5 @@ private:
 };
 
 #endif /* MIDISTEPPER_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

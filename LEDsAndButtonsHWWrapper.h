@@ -5,6 +5,9 @@
  *      Author: Martin Baar
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef LEDSANDBUTTONSHWWRAPPER_H_
 #define LEDSANDBUTTONSHWWRAPPER_H_
 
@@ -24,3 +27,5 @@ public:
 };
 
 #endif /* LEDSANDBUTTONSHWWRAPPER_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

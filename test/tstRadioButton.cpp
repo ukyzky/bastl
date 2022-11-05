@@ -1,4 +1,7 @@
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "HWLayerMock.h"
 #include "../RadioButtons.h"
 //#include "../Switches.h"
@@ -96,3 +99,5 @@ int main( int argc, const char* argv[] ) {
 
 
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

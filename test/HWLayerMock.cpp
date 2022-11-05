@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "HWLayerMock.h"
 
 HWLayerMock::HWLayerMock()
@@ -16,3 +19,5 @@ void HWLayerMock::setButtonState(unsigned char buttonIndex, bool newState)
 {
     buttonStates_[buttonIndex] = newState;
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

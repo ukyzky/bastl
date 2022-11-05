@@ -1,4 +1,7 @@
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef MIDI_NOTE_BUFFER_H_
 #define MIDI_NOTE_BUFFER_H_
 
@@ -42,3 +45,5 @@ private:
 
 
 #endif
+
+#endif // defined(BASTL_FEATURE_ALL)

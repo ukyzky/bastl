@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "PlayerSettings.h"
 
 PlayerSettings::PlayerSettings() : drumInstrumentEventTypes_(0),
@@ -79,3 +82,5 @@ unsigned char PlayerSettings::getRecordQuantizationSize() {
 	return quantizationRate;
 
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

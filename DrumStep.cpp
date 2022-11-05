@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "DrumStep.h"
 
 DrumStep::DrumStep() : Step(false) {
@@ -12,3 +15,5 @@ DrumStep::DrumStep(bool mute, DrumVelocityType substeps[]) : Step(mute)
         _substeps[i] = substeps[i];
     }
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

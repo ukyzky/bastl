@@ -1,4 +1,7 @@
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef INTERPOLATING_BUFFER_H_
 #define INTERPOLATING_BUFFER_H_
 
@@ -58,3 +61,5 @@ private:
 
 
 #endif
+
+#endif // defined(BASTL_FEATURE_ALL)

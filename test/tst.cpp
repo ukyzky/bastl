@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 //#include <iostream>
 #include <cstdio>
 #include <cstdlib>
@@ -487,3 +490,5 @@ int main( int argc, const char* argv[] ) {
 	//multiplier.setMultiplication(5);
 	//multiplier.setMinTriggerTime(1);*/
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

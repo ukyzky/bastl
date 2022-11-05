@@ -16,6 +16,9 @@
 //  You may modify and use this source code to create binary code for your own purposes, free or commercial.
 //
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef EXP_ADRS_h
 #define EXP_ADRS_h
 
@@ -139,3 +142,5 @@ inline float ADSR::getOutput() {
 }
 
 #endif
+
+#endif // defined(BASTL_FEATURE_ALL)

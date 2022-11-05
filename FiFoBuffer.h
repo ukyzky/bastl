@@ -5,6 +5,9 @@
  *      Author: user
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef FIFOBUFFER_H_
 #define FIFOBUFFER_H_
 
@@ -113,3 +116,5 @@ bool FiFoBuffer<size,type>::isFull() {
 
 
 #endif /* FIFOBUFFER_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

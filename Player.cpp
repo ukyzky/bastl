@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "Player.h"
 #include "IStepMemory.h"
 
@@ -120,3 +123,5 @@ void Player::resetAllInstruments() {
 	}
 	isStopped_ = true;
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

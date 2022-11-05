@@ -5,6 +5,9 @@
  *      Author: dasvaclav
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include <simpleSerialProtocol.h>
 
 #include <Arduino.h>
@@ -60,3 +63,5 @@ void simpleSerialProtocol::sync(){
 	type=0;
 	value=0;
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

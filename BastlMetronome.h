@@ -5,6 +5,9 @@
  *      Author: Martin Baar
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef METRONOME_H_
 #define METRONOME_H_
 
@@ -62,3 +65,5 @@ inline void BastlMetronome::setStepCallback(void (*stepCallback)()) {
 }
 
 #endif /* METRONOME_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

@@ -5,6 +5,9 @@
  *      Author: user
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef BASIC_H_
 #define BASIC_H_
 #ifndef Arduino_h // this is not compatible with Arduino.h because macro names are identical
@@ -23,3 +26,5 @@
 
 #endif /* Arduino_h */
 #endif /* BASIC_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

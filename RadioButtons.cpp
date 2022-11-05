@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "RadioButtons.h"
 
 //#define DEBUG
@@ -58,3 +61,5 @@ bool RadioButtons::getSelectedButton(unsigned char &selectedButton)
     }
     return false;
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

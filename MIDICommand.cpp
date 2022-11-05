@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "MIDICommand.h"
 
 MIDICommand::MIDICommand() : type_(NOTEOFF), channel_(0), note_(0), velocity_(0) {
@@ -12,3 +15,5 @@ MIDICommand::MIDICommand(MIDICommand::MIDICommandType type,
 {
 
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

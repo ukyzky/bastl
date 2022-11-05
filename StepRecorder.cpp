@@ -5,6 +5,9 @@
  *      Author: bastl
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "StepRecorder.h"
 
 StepRecorder::StepRecorder() : player_(0), memory_(0), playerSettings_(0), stepper_(0), record_(true) {
@@ -104,3 +107,4 @@ void StepRecorder::recordMIDINote(unsigned char channel, unsigned char note) {
 	}
 }
 
+#endif // defined(BASTL_FEATURE_ALL)

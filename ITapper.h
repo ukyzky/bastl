@@ -5,6 +5,9 @@
  *      Author: martin
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef ITAPPER_H_
 #define ITAPPER_H_
 
@@ -22,3 +25,5 @@ public:
 
 
 #endif /* ITAPPER_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

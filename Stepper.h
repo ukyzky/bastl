@@ -1,4 +1,7 @@
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef STEPPER_H_
 #define STEPPER_H_
 
@@ -109,3 +112,5 @@ private:
 
 
 #endif /* STEPPER_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

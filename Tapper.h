@@ -5,6 +5,9 @@
  *      Author: bastl
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef TAPPER_H_
 #define TAPPER_H_
 
@@ -76,3 +79,5 @@ inline bool Tapper::anyStepDetected() {
 }
 
 #endif /* TAPPER_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

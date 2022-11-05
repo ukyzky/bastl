@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef ISEQUENCEMEMORY_H
 #define ISEQUENCEMEMORY_H
 
@@ -24,3 +27,5 @@ public:
 
 
 #endif // ISEQUENCEMEMORY_H
+
+#endif // defined(BASTL_FEATURE_ALL)

@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef FLASHSTEPMEMORY_H
 #define FLASHSTEPMEMORY_H
 
@@ -50,3 +53,5 @@ inline unsigned char * NoVelocityStepMemory::getDataReference() {
 }
 
 #endif // FLASHSTEPMEMORY_H
+
+#endif // defined(BASTL_FEATURE_ALL)

@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef DUMMYSEQUENCEMEMORY_H
 #define DUMMYSEQUENCEMEMORY_H
 
@@ -20,3 +23,5 @@ private:
 };
 
 #endif // DUMMYSEQUENCEMEMORY_H
+
+#endif // defined(BASTL_FEATURE_ALL)

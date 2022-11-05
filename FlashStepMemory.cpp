@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "FlashStepMemory.h"
 #include "RackInstrumentDefinitions.h"
 
@@ -132,3 +135,4 @@ void FlashStepMemory::setPatternSettings(unsigned char patternIndex, unsigned ch
 	hwLayer_->writeSRAM( DRUM_BYTES + patternIndex * 3, settings, 3);
 }
 
+#endif // defined(BASTL_FEATURE_ALL)

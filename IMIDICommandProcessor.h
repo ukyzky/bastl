@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef IMIDICOMMANDPROCESSOR_H
 #define IMIDICOMMANDPROCESSOR_H
 
@@ -9,3 +12,5 @@ public:
 };
 
 #endif // IMIDICOMMANDPROCESSOR_H
+
+#endif // defined(BASTL_FEATURE_ALL)

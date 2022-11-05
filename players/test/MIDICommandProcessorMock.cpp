@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "MIDICommandProcessorMock.h"
 
 MIDICommandProcessorMock::MIDICommandProcessorMock()
@@ -13,3 +16,5 @@ void MIDICommandProcessorMock::SendCommand(MIDICommand &command)
         noteOnCount_[command.getChannel()]++;
     }
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

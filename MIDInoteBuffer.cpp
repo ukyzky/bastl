@@ -5,6 +5,9 @@
  *  Created on: Jan 28, 2015
  *      Author: dasvaclav
  */
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "MIDInoteBuffer.h"
 #include <basic.h>
 
@@ -99,3 +102,5 @@ void MIDInoteBuffer::addNoteToBuffer(uint8_t _note, uint8_t _velocity){
 	midiBuffer[0]=_note;
 	velocityBuffer[0]=_velocity;
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

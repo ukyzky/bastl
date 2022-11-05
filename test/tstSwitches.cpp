@@ -1,4 +1,7 @@
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "HWLayerMock.h"
 #include "../RadioButtons.h"
 #include "../Switches.h"
@@ -54,3 +57,5 @@ int main( int argc, const char* argv[] ) {
     switches2.setStatus(3, false);
     printf("\tTest 12 - Button set externally to released \t\t%s\n", !switches2.getStatus(3) ? "OK" : "Error");
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

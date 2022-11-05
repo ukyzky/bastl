@@ -5,6 +5,9 @@
  *      Author: user
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL) || defined(BASTL_FEATURE_LITTLENERD)
+
 #ifndef SHIFTREGISTERFAST_H_
 #define SHIFTREGISTERFAST_H_
 
@@ -99,3 +102,5 @@ namespace shiftRegFast {
 
 
 #endif /* SHIFTREGISTERFAST_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL) || defined(BASTL_FEATURE_LITTLENERD)

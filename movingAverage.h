@@ -5,6 +5,9 @@
  *      Author: user
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef MOVINGAVERAGE_H_
 #define MOVINGAVERAGE_H_
 
@@ -109,3 +112,5 @@ type MovingAverageLinear<type>::getAverage() {
 }
 
 #endif /* MOVINGAVERAGE_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

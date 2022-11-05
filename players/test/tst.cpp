@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include <iostream>
 #include "../PlayerSettings.h"
 #include "../Player.h"
@@ -101,3 +104,5 @@ int main( int argc, const char* argv[] ) {
     printf("\tTest 19 - Next one active step \t\t%s\n", mock.getNoteOnCountForChannel(0) == 8 &&
                                                         mock.getNoteOffCountForChannel(0) == 8 ? "OK" : "Error");
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

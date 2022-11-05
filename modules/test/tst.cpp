@@ -5,6 +5,9 @@
  *      Author: Martin Baar
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "SteppingHWLayerMock.h"
 #include "../Stepper.h"
 #include "../MIDIStepper.h"
@@ -120,7 +123,4 @@ int main( int argc, const char* argv[] ) {
 	printf("Checking Stepper after another 4 MIDI step and 97 Bastl cycles: %s\n", numberOfSteps == 7 ? "OK": "ERROR");
 }
 
-
-
-
-
+#endif // defined(BASTL_FEATURE_ALL)

@@ -5,6 +5,9 @@
  *      Author: Martin Baar
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef ARPEGGIATOR_H_
 #define ARPEGGIATOR_H_
 
@@ -103,3 +106,5 @@ inline void Arpeggiator::clear() {
 
 
 #endif /* ARPEGGIATOR_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

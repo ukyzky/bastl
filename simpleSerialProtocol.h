@@ -5,6 +5,9 @@
  *      Author: dasvaclav
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef SIMPLESERIALPROTOCOL_H_
 #define SIMPLESERIALPROTOCOL_H_
 #include <Arduino.h>
@@ -34,3 +37,5 @@ class simpleSerialProtocol {
 
 
 #endif /* SIMPLESERIALPROTOCOL_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

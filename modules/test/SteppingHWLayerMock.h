@@ -5,6 +5,9 @@
  *      Author: bastl
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef STEPPINGHWLAYERMOCK_H_
 #define STEPPINGHWLAYERMOCK_H_
 
@@ -29,3 +32,5 @@ private:
 };
 
 #endif /* STEPPINGHWLAYERMOCK_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

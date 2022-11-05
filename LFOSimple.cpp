@@ -5,6 +5,8 @@
  *      Author: user
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
 
 #include "LFOSimple.h"
 
@@ -71,3 +73,5 @@ uint8_t LFOSimple::calcOutput() {
 	return currentOutput;
 
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

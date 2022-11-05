@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef ILEDSANDBUTTONSHW_H
 #define ILEDSANDBUTTONSHW_H
 
@@ -15,3 +18,5 @@ public:
 };
 
 #endif // ILEDSANDBUTTONSHW_H
+
+#endif // defined(BASTL_FEATURE_ALL)

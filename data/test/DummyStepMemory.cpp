@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "DummyStepMemory.h"
 
 //#define DEBUG
@@ -41,3 +44,5 @@ bool DummyStepMemory::getNextActiveDrumStep(unsigned char instrumentID, unsigned
     }
     return true;
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

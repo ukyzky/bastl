@@ -5,6 +5,9 @@
  *      Author: user
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include <portManipulations.h>
 #include <inttypes.h>
 
@@ -76,3 +79,4 @@ private:
 
 #endif /* SHIFTREGISTERS_H_ */
 
+#endif // defined(BASTL_FEATURE_ALL)

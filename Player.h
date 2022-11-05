@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef PLAYER_H
 #define PLAYER_H
 
@@ -116,3 +119,5 @@ inline void Player::setNoteOffDisalbedState(unsigned char instrument, bool disab
 	setBit(noteOffDisabledInstruments_, instrument, disabled);
 }
 #endif // PLAYER_H
+
+#endif // defined(BASTL_FEATURE_ALL)

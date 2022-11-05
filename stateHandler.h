@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef STATEHANDLER_H
 #define STATEHANDLER_H
 
@@ -149,5 +152,4 @@ private:
 
 #endif
 
-
-
+#endif // defined(BASTL_FEATURE_ALL)

@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "LEDRadioButtons.h"
 
 void LEDRadioButtons::init( unsigned char * buttonIndexes, unsigned char count) {
@@ -16,3 +19,4 @@ void LEDRadioButtons::resetSelection() {
 	RadioButtons::resetSelection();
 }
 
+#endif // defined(BASTL_FEATURE_ALL)

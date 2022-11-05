@@ -5,6 +5,9 @@
  *      Author: bastl
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef BPMCONVERTER_H_
 #define BPMCONVERTER_H_
 
@@ -17,3 +20,5 @@ public:
 };
 
 #endif /* BPMCONVERTER_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

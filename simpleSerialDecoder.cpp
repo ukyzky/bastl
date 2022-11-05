@@ -5,6 +5,9 @@
  *      Author: dasvaclav
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include <simpleSerialDecoder.h>
 #include <simpleSerialProtocol.h>
 #include <Arduino.h>
@@ -245,3 +248,5 @@ void simpleSerialDecoder::attachChannelModeCallback(void(*channelModeCallback)(u
 void simpleSerialDecoder::attachChannelValueCallback(void(*channelValueCallback)(uint8_t channel, uint8_t value, uint8_t number)){
 	this->channelValueCallback = channelValueCallback;
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

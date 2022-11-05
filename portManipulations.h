@@ -6,6 +6,9 @@
  *      thanks to: http://www.avrfreaks.net/index.php?name=PNphpBB2&file=viewtopic&t=91304
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL) || defined(BASTL_FEATURE_LITTLENERD)
+
 #ifndef PORTMANIPULATIONS_H_
 #define PORTMANIPULATIONS_H_
 
@@ -54,3 +57,5 @@
 
 
 #endif /* PORTMANIPULATIONS_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL) || defined(BASTL_FEATURE_LITTLENERD)

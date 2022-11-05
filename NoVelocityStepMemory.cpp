@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "NoVelocityStepMemory.h"
 #include "BitArrayOperations.h"
 
@@ -164,3 +167,5 @@ unsigned int NoVelocityStepMemory::getDataOffset(unsigned char instrumentID, uns
 	return ((unsigned int)instrumentID * 48) +
 			((unsigned int)pan * 12) + 2;
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

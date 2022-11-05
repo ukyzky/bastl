@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef HWLAYERMOCK_H
 #define HWLAYERMOCK_H
 
@@ -16,3 +19,5 @@ private:
 };
 
 #endif // HWLAYERMOCK_H
+
+#endif // defined(BASTL_FEATURE_ALL)

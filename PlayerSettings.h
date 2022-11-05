@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef PLAYERSETTINGS_H
 #define PLAYERSETTINGS_H
 
@@ -212,3 +215,5 @@ inline void PlayerSettings::setPatternMomentary(bool _momentaryValue) {
 }
 
 #endif // PLAYERSETTINGS_H
+
+#endif // defined(BASTL_FEATURE_ALL)

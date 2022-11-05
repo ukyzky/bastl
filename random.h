@@ -5,6 +5,9 @@
  *      Author: user
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef RANDOM_H_
 #define RANDOM_H_
 
@@ -15,3 +18,5 @@ namespace bastlRandom {
 	uint8_t range(uint8_t min, uint8_t max);
 }
 #endif
+
+#endif // defined(BASTL_FEATURE_ALL)

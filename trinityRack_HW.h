@@ -11,6 +11,9 @@ for Standuino wwww.standuino.eu
 
 */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef trinityHWR_h
 #define trinityHWR_h
 
@@ -223,3 +226,5 @@ class trinityHWR
 
 };
 #endif /* TRINITYRACK_HW_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

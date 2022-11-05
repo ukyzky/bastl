@@ -11,6 +11,8 @@ for Standuino wwww.standuino.eu
 
 */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
 
 #include "Arduino.h"
 #include <avr/pgmspace.h>
@@ -400,3 +402,5 @@ void trinityHWR::factoryCleared(){
 	  		delay(CLEAR_DELAY);
   		}
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

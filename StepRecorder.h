@@ -5,6 +5,9 @@
  *      Author: bastl
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef STEPRECORDER_H_
 #define STEPRECORDER_H_
 
@@ -50,3 +53,5 @@ inline void StepRecorder::setCurrentStepper(BastlStepper * stepper) {
 
 
 #endif /* STEPRECORDER_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

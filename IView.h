@@ -5,6 +5,9 @@
  *      Author: bastl
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef IVIEW_H_
 #define IVIEW_H_
 
@@ -18,3 +21,4 @@ inline IView::~IView() { }
 
 #endif /* IVIEW_H_ */
 
+#endif // defined(BASTL_FEATURE_ALL)

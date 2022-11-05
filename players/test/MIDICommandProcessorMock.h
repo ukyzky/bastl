@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef MIDICOMMANDPROCESSORMOCK_H
 #define MIDICOMMANDPROCESSORMOCK_H
 
@@ -32,3 +35,5 @@ inline void MIDICommandProcessorMock::clear() {
 }
 
 #endif // MIDICOMMANDPROCESSORMOCK_H
+
+#endif // defined(BASTL_FEATURE_ALL)

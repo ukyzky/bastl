@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef ILEDHW_H
 #define ILEDHW_H
 
@@ -18,3 +21,5 @@ public:
 };
 
 #endif // ILEDHW_H
+
+#endif // defined(BASTL_FEATURE_ALL)

@@ -5,6 +5,9 @@
  *      Author: bastl
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef STEPSYNCHRONIZER_H_
 #define STEPSYNCHRONIZER_H_
 
@@ -43,3 +46,5 @@ inline void StepSynchronizer::reset() {
 }
 
 #endif /* STEPSYNCHRONIZER_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

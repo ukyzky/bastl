@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include <stdio.h>
 #include <inttypes.h>
 
@@ -53,3 +56,5 @@ int main( int argc, const char* argv[] ) {
 
 
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

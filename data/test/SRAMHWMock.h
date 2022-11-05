@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef SRAMHWMOCK_H
 #define SRAMHWMOCK_H
 
@@ -22,3 +25,5 @@ private:
 };
 
 #endif // SRAMHWMOCK_H
+
+#endif // defined(BASTL_FEATURE_ALL)

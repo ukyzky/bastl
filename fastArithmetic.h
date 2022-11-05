@@ -5,6 +5,9 @@
  *      Author: user
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef FASTARITHMETIC_H_
 #define FASTARITHMETIC_H_
 
@@ -92,3 +95,5 @@ static inline int16_t Clip(int16_t value, int16_t min, int16_t max) {
 
 
 #endif /* FASTARITHMETIC_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

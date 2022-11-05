@@ -5,6 +5,8 @@
  *      Author: user
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
 
 #include "LFO.h"
 
@@ -59,4 +61,4 @@ uint8_t LFO::getValue(uint16_t timestamp) {
 	return calcOutput();
 }
 
-
+#endif // defined(BASTL_FEATURE_ALL)

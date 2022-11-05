@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef IHWLAYER_H
 #define IHWLAYER_H
 
@@ -54,3 +57,5 @@ const hardwareEvent emptyEvent = {255,IHWLayer::EMPTY,0};
 
 
 #endif // IHWLAYER_H
+
+#endif // defined(BASTL_FEATURE_ALL)

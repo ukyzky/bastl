@@ -5,6 +5,9 @@
  *  Created on: Jan 28, 2015
  *      Author: dasvaclav
  */
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "interpolatingBuffer.h"
 #include <Arduino.h>
 
@@ -116,3 +119,4 @@ uint8_t interpolatingBuffer::calculateSmoothAverage(){
 	return sum/32;
 }
 
+#endif // defined(BASTL_FEATURE_ALL)

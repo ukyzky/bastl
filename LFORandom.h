@@ -5,6 +5,9 @@
  *      Author: user
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef LFORANDOM_H_
 #define LFORANDOM_H_
 
@@ -40,3 +43,5 @@ private:
 
 
 #endif /* LFORANDOM_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

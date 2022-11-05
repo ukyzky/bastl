@@ -5,6 +5,9 @@
  *      Author: user
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef LFOEXTENDED_H_
 #define LFOEXTENDED_H_
 
@@ -120,3 +123,5 @@ private:
 
 
 #endif /* LFOEXTENDED_H_ */
+
+#endif // defined(BASTL_FEATURE_ALL)

@@ -5,6 +5,8 @@
  *      Author: user
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
 
 #include "random.h"
 #include "basic.h"
@@ -28,3 +30,5 @@ uint8_t bastlRandom::range(uint8_t min, uint8_t max) {
 	uint16_t numbChoices = max-min+1;
 	return ((min(byte(),254)*numbChoices)>>8) + min;
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

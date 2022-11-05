@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include <stdio.h>
 #include "../Step.h"
 #include "../DrumStep.h"
@@ -119,3 +122,5 @@ int main( int argc, const char* argv[] )
     printf("Flash memory next valid is first: %s \n", nextStep == 0 ? "OK" : "Error");
     testNon16GetNextActive();
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

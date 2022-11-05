@@ -5,6 +5,9 @@
  *      Author: bastl
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "Tapper.h"
 
 //#define TESTING
@@ -158,3 +161,5 @@ void Tapper::tap(uint16_t tapTime)
 
 
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

@@ -5,6 +5,9 @@
  *      Author: Martin Baar
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "Arpeggiator.h"
 #include "random.h"
 
@@ -146,3 +149,5 @@ void Arpeggiator::fillSorted() {
 		sortedNotes_[targetIndex] = sourceIndex;
 	}
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

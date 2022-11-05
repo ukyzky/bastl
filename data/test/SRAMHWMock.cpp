@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include "SRAMHWMock.h"
 
 SRAMHWMock::SRAMHWMock()
@@ -45,3 +48,5 @@ void SRAMHWMock::writeSRAM(long address, unsigned char *data, unsigned int size)
         data_[i + address] = data[i];
     }
 }
+
+#endif // defined(BASTL_FEATURE_ALL)

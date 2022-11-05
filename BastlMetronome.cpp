@@ -5,6 +5,8 @@
  *      Author: Martin Baar
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
 
 //#define DEBUG
 #ifdef DEBUG
@@ -86,7 +88,4 @@ unsigned char BastlMetronome::getTimeUnitsPerStep() {
 	return timeUnitsPerStep_;
 }
 
-
-
-
-
+#endif // defined(BASTL_FEATURE_ALL)

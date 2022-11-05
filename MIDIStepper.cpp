@@ -5,6 +5,9 @@
  *      Author: bastl
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 //#define DEBUG
 #ifdef DEBUG
 
@@ -35,3 +38,4 @@ void MIDIStepper::stepMIDI() {
 	stopAfterNextStep();*/
 }
 
+#endif // defined(BASTL_FEATURE_ALL)

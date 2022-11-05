@@ -1,3 +1,6 @@
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #ifndef RADIOBUTTONS_H
 #define RADIOBUTTONS_H
 
@@ -25,3 +28,5 @@ inline void RadioButtons::resetSelection() {
 }
 
 #endif // RADIOBUTTONS_H
+
+#endif // defined(BASTL_FEATURE_ALL)

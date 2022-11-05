@@ -5,6 +5,9 @@
  *      Author: user
  */
 
+#include "BastlDef.h"
+#if defined(BASTL_FEATURE_ALL)
+
 #include <shiftRegisters.h>
 #include <portManipulations.h>
 #include <Arduino.h>
@@ -68,4 +71,4 @@ void shiftRegisterBasic::write(uint8_t byte) {
 	sei();
 }
 
-
+#endif // defined(BASTL_FEATURE_ALL)
