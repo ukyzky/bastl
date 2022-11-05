@@ -4,7 +4,7 @@
 /**
  * feature definition
  */ 
-#define BASTL_FEATURE_ALL
-// #define BASTL_FEATURE_LITTLENERD
+// #define BASTL_FEATURE_ALL
+#define BASTL_FEATURE_LITTLENERD
 
 #endif // BASTL_DEF_H_
